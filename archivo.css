@@ -1,0 +1,146 @@
+header p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+main p {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.imagen {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    margin: 25px 40px;
+    border: 2px solid #94ba65;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #2b4e72;
+}
+
+header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin: 10px;
+}    
+
+.encabezado {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.encabezado p {
+    font-size: 19px;
+}
+
+.encabezado p:nth-child(1) {
+    font-size: 31px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.encabezado p:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #94ba65;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+  
+.encabezado p:nth-child(1):hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.encabezado:nth-child(2) {
+    margin: 50px;
+}
+
+main {
+    margin: -30px 106px;
+    font-family: 'Cabin';
+    background-color: #2790b0;
+    border-radius: 15px;
+}
+
+.exp {
+    font-size: 24px;
+    font-weight: bold; /* Negrita */
+    text-decoration: underline; /* Subrayado */
+    text-decoration-color: #94ba65;
+}
+
+body:nth-child(1), body:nth-child(2) {
+    display: inline-flex;
+}
+
+footer {
+    margin-top: 50px;
+    font-family: 'Cabin';
+}
+
+a {
+    color: #94ba65;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #94ba65;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  li {
+    display: inline-block; /* El título solo ocupa el ancho del texto */
+    position: relative; /* Para posicionar el subrayado */
+  }
+  
+  li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #94ba65;
+    visibility: hidden;
+    transform: scaleX(0); /* La línea empieza oculta */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  li:hover::after {
+    visibility: visible;
+    transform: scaleX(1); /* La línea se extiende con la animación */
+  }
+
+  .contacto {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #94ba65;
+  }
